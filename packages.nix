@@ -23,6 +23,11 @@ let
     antigen
     thefuck
     gnutar
-
+    zsh
+    oh-my-zsh
+    iterm2
+    goku
+    starship
   ];
+  
 in homePackages ++ gitTools ++ nixTools
