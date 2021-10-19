@@ -3,6 +3,7 @@
 {
   enable = true;
   shellAliases = {
+    # ones from the original author
     grep = "grep --color=auto";
     diff = "diff --color=auto";
     dc = "docker compose";
@@ -11,6 +12,9 @@
     switch = "home-manager switch && source ~/.zshrc";
     garbage = "nix-collect-garbage";
     reload = "switch && garbage";
+    # austin's custom one aliases
+    pupgit='cd ~/git/puppet';
+    pupper='cd ~/git/personal';
   };
   enableAutosuggestions = true;
   enableCompletion = true;

@@ -37,26 +37,22 @@ in {
 
     starship = import ./starship.nix;
 
-    gpg = {
-      enable = true;
-    };
-
-    alacritty = import ./alacritty.nix;
+  # commented out for now 10/19/21
+  #  gpg = {
+  #    enable = true;
+  #  };
 
     git = import ./git.nix { inherit pkgs; };
-
-    tmux = import ./tmux.nix;
 
     zsh = import ./zsh.nix { fetchFromGitHub = pkgs.fetchFromGitHub; };
   };
 
   home = {
-    username = "lucperkins";
-    homeDirectory = "/Users/lucperkins";
+    username = "austin.boyd";
+    homeDirectory = "/Users/austin.boyd";
     packages = allPackages;
     sessionVariables = {
       EDITOR = "nvim";
-      TERMINAL = "alacritty";
     };
   };
 

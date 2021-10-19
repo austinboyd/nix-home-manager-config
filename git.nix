@@ -3,25 +3,20 @@
 {
   package = pkgs.gitAndTools.gitFull;
   enable = true;
-  userName = "Luc Perkins";
-  userEmail = "lucperkins@gmail.com";
+  userName = "Austin Boyd";
+  userEmail = "austin@puppet.com";
   ignores = [
     ".cache/"
     ".DS_Store"
-    ".idea/"
     "*.swp"
-    "built-in-stubs.jar"
-    "dumb.rdb"
-    ".elixir_ls/"
     ".vscode/"
-    "npm-debug.log"
     "shell.nix"
   ];
   aliases = {
     ba = "branch -a";
     bd = "branch -D";
     br = "branch";
-    cam = "commit -am";
+    acm = "commit -am"; # add, commit, message
     co = "checkout";
     cob = "checkout -b";
     ci = "commit";
@@ -42,11 +37,11 @@
       editor = "vim";
       whitespace = "trailing-space,space-before-tab";
     };
+    
+    # Look into these later
+    # commit.gpgsign = "true";
+    # gpg.program = "gpg2";
 
-    commit.gpgsign = "true";
-    gpg.program = "gpg2";
-
-    protocol.keybase.allow = "always";
     credential.helper = "osxkeychain";
     pull.rebase = "false";
     init.defaultBranch = "main";

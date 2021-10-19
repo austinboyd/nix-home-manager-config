@@ -10,28 +10,19 @@ let
   ];
 
   nixTools = with pkgs; [
-    cachix
     lorri
     niv
   ];
 
   homePackages = with pkgs; [
     youtube-dl
-    packer
     vagrant
-    nodejs
-    age
-    elixir
     jq
-    terraform
-    doctl
-    yarn
-    cue
-    hugo
     bat
-    httpie
     dhall
-    rustup
-    cargo-make
+    antigen
+    thefuck
+    gnutar
+
   ];
 in homePackages ++ gitTools ++ nixTools

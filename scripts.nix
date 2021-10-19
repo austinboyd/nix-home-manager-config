@@ -13,9 +13,10 @@ let
     readlink $(which $1)
   '';
 
-  build-push = writeScriptBin "build-push" ''
-    nix-build '<nixpkgs>' -A $1 | cachix push lucperkins-dev && rm result
-  '';
+# removed cachix from packages, have to decide if it's something i want 
+#  build-push = writeScriptBin "build-push" ''
+#    nix-build '<nixpkgs>' -A $1 | cachix push lucperkins-dev && rm result
+#  '';
 
   run = writeScriptBin "run" ''
     nix-shell --pure --run "$@"

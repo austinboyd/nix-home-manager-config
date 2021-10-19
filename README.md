@@ -32,5 +32,5 @@ To use these configs yourself as a starter:
 1. Install [Home Manager](https://github.com/rycee/home-manager)
 1. `cd ~/.config`
 1. `rm -rf nixpkgs`
-1. `git clone https://github.com/lucperkins/nix-home-config nixpkgs`
+1. `git clone https://github.com/austinboyd/nix-home-config nixpkgs`
 1. `home-manager switch && source ~/.zshrc`
