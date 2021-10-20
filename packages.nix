@@ -16,7 +16,7 @@ let
   ];
 
   homePackages = with pkgs; [
-    xcode-select --install
+    xcode-install
     youtube-dl
     vagrant
     jq
