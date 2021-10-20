@@ -27,7 +27,7 @@ let
     gnutar
     zsh
     oh-my-zsh
-    iterm2
+    #iterm2
     goku
     starship
   ];
