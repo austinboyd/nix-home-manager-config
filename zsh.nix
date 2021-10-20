@@ -14,7 +14,6 @@
     reload = "switch && garbage";
     # austin's custom one aliases
     pupgit="cd ~/git/puppet";
-    pupper="cd ~/git/personal";
   };
   enableAutosuggestions = true;
   enableCompletion = true;

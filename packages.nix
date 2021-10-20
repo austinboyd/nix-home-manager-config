@@ -10,6 +10,7 @@ let
   ];
 
   nixTools = with pkgs; [
+    cachix
     lorri
     niv
   ];
@@ -28,6 +29,7 @@ let
     iterm2
     goku
     starship
+    xcode-install
   ];
-  
+
 in homePackages ++ gitTools ++ nixTools
