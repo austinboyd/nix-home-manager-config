@@ -16,6 +16,7 @@ let
   ];
 
   homePackages = with pkgs; [
+    xcode-select --install
     youtube-dl
     vagrant
     jq
@@ -29,7 +30,6 @@ let
     iterm2
     goku
     starship
-    xcode-install
   ];
 
 in homePackages ++ gitTools ++ nixTools
