@@ -16,6 +16,7 @@ let
   ];
 
   homePackages = with pkgs; [
+    xcode-install
     youtube-dl
     vagrant
     jq
@@ -26,10 +27,9 @@ let
     gnutar
     zsh
     oh-my-zsh
-    iterm2
+    #iterm2
     goku
     starship
-    xcode-install
   ];
 
 in homePackages ++ gitTools ++ nixTools
